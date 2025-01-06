@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+<style>
+  #myDiv { display: none; }
+</style>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be hidden.
+  </div>
+
+  <script>
+    // Correct approach using style property or class to control display
+    // Example: Show the div after 2 seconds
+    setTimeout(function() {
+      document.getElementById("myDiv").style.display = "block";
+    }, 2000);
+  </script>
+</body>
+</html>
